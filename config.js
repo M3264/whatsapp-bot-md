@@ -1,6 +1,7 @@
 const toBool = (x) => x == 'true'
 const { Sequelize } = require('sequelize')
 const { existsSync } = require('fs')
+const port = process.env.PORT || 4000;
 const path = require('path')
 const configPath = path.join(__dirname, './config.env')
 const databasePath = path.join(__dirname, './database.db')
